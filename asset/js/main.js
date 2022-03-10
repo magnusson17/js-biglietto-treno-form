@@ -1,8 +1,8 @@
 let mainContainer = document.getElementById("main-container");
 
 //con prompt ottengo delle string, con Number() le trasformo in number: (in questo caso Number() è meglio di parseInt())
-let kmQuery = Number(prompt("Benvenuto sul sito, inserisca quanti kilometri deve percorrere:"));
-let ageQuery = Number(prompt("Inserisca la sua età in anni:"));
+    // let kmQuery = Number(prompt("Benvenuto sul sito, inserisca quanti kilometri deve percorrere:"));
+    // let ageQuery = Number(prompt("Inserisca la sua età in anni:"));
 
 //il prezzo è di 0,21 euro X km
 let totPrice = kmQuery * 0.21;

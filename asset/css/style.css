@@ -8,23 +8,27 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: rgb(165, 42, 89);
+}
+
 #section-1 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-image: url("../img/bg-train.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 #main-container {
-    display: flex;
+    /* display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     padding: 30px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5em; */
 }
