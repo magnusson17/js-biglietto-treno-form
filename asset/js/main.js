@@ -1,27 +1,36 @@
-let mainContainer = document.getElementById("main-container");
+// let inputNameSurname = document.getElementById("input-name-surname");
+let inputDropdown = document.getElementById("input-dropdown").value;
+let generateBtn = document.getElementById("generate-btn");
 
-//con prompt ottengo delle string, con Number() le trasformo in number: (in questo caso Number() è meglio di parseInt())
-    // let kmQuery = Number(prompt("Benvenuto sul sito, inserisca quanti kilometri deve percorrere:"));
-    // let ageQuery = Number(prompt("Inserisca la sua età in anni:"));
+generateBtn.addEventListener("click", GenerateTiket())
 
-//il prezzo è di 0,21 euro X km
-let totPrice = kmQuery * 0.21;
-
-//sconto 20% per minorenni e 40% per over 65
-if (ageQuery < 18) {
-    totPrice -= (totPrice * 0.2);
-} else if (ageQuery > 64) {
-    totPrice -= (totPrice * 0.4);
-} else {
-    totPrice = totPrice
+function GenerateTiket() {
+    console.log(inputDropdown)
 }
 
-//arrotondo totPrice a 2 cifre decimali
-totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
 
-//risultato finale
-if (isNaN(kmQuery) || isNaN(ageQuery)) {
-    mainContainer.innerHTML = `<p>ERRORE, ricaricare la pagina e inserire correttamente i dati</p>`
-} else {
-    mainContainer.innerHTML = `<p>Prezzo biglietto: ${totPriceRounded} &euro;</p>`
-}
+
+
+// let mainContainer = document.getElementById("main-container");
+
+// let kmQuery = Number(prompt("Benvenuto sul sito, inserisca quanti kilometri deve percorrere:"));
+// let ageQuery = Number(prompt("Inserisca la sua età in anni:"));
+
+
+// let totPrice = kmQuery * 0.21;
+
+// if (ageQuery < 18) {
+//     totPrice -= (totPrice * 0.2);
+// } else if (ageQuery > 65) {
+//     totPrice -= (totPrice * 0.4);
+// } else {
+//     totPrice = totPrice
+// }
+
+// totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
+
+// if (isNaN(kmQuery) || isNaN(ageQuery)) {
+//     mainContainer.innerHTML = `<p>ERRORE, ricaricare la pagina e inserire correttamente i dati</p>`
+// } else {
+//     mainContainer.innerHTML = `<p>Prezzo biglietto: ${totPriceRounded} &euro;</p>`
+// }
