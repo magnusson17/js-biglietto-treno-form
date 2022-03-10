@@ -1,10 +1,3 @@
-let inputNameSurname;
-let inputKm;
-let inputAge;
-
-let totPrice;
-let totPriceRounded;
-
 let sectionTre = document.getElementById("section-3");
 
 let euroPerKm = 0.21;
@@ -12,17 +5,13 @@ let euroPerKm = 0.21;
 let generateBtn = document.getElementById("generate-btn");
 
 generateBtn.addEventListener("click", function () {
-    inputNameSurname = document.getElementById("input-name-surname").value
-    inputKm = document.getElementById("input-km").value;
-    inputAge = document.getElementById("input-age").value;
-
-    // if (isNaN(inputKm) || isNaN(inputAge)) {
-    //     allert("ERRORE, ricaricare la pagina")
-    // }
+    let inputNameSurname = document.getElementById("input-name-surname").value
+    let inputKm = document.getElementById("input-km").value;
+    let inputAge = document.getElementById("input-age").value;
 
     sectionTre.classList.toggle("d-none")
 
-    totPrice = inputKm * euroPerKm
+    let totPrice = inputKm * euroPerKm
 
     if (inputAge < 18) {
         totPrice -= (totPrice * 0.2);
@@ -32,7 +21,7 @@ generateBtn.addEventListener("click", function () {
         totPrice = totPrice
     }
 
-    totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
+    let totPriceRounded = Math.round((totPrice + Number.EPSILON) * 100) / 100;
 
     randomCarriage = Math.floor(Math.random() * 10) + 1;
     randomCpCode = Math.floor(Math.random() * 100000) + 1;

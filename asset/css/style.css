@@ -12,23 +12,36 @@ body {
     background-color: rgb(165, 42, 89);
 }
 
-#section-1 {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("../img/bg-train.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+.bg_silver {
+    background-color: silver;
 }
 
-#main-container {
-    /* display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+.border_rad_20px {
     border-radius: 20px;
-    padding: 30px;
-    color: white;
-    font-size: 1.5em; */
+}
+
+.border_b_gray {
+    border-bottom: 2px solid gray;
+}
+
+.btn-basic-style {
+    border: none;
+    border: 1px solid gray;
+    padding: 10px;
+    color: rgb(165, 42, 89);
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-basic-style:hover {    
+    border: 1px solid orange;
+}
+
+#section-2 label {
+    color:rgb(165, 42, 89);
+    font-size: large;
+}
+
+#section-2 input, #section-2 select {
+    border: 1px solid rgb(165, 42, 89);
 }
