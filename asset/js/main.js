@@ -4,20 +4,25 @@ let euroPerKm = 0.21;
 
 let generateBtn = document.getElementById("generate-btn");
 
+let offerType = document.getElementById("offer-type");
+
 generateBtn.addEventListener("click", function () {
     let inputNameSurname = document.getElementById("input-name-surname").value
     let inputKm = document.getElementById("input-km").value;
     let inputAge = document.getElementById("input-age").value;
 
-    sectionTre.classList.toggle("d-none")
+    sectionTre.classList.remove("d-none")
 
     let totPrice = inputKm * euroPerKm
 
-    if (inputAge < 18) {
+    if (inputAge == "minor") {
+        offerType.append("Sconto minorenne");
         totPrice -= (totPrice * 0.2);
-    } else if (inputAge > 65) {
+    } else if (inputAge == "over") {
+        offerType.append("Sconto over 65");
         totPrice -= (totPrice * 0.4);
     } else {
+        offerType.append("Biglietto standard");
         totPrice = totPrice
     }
 
@@ -27,7 +32,7 @@ generateBtn.addEventListener("click", function () {
     randomCpCode = Math.floor(Math.random() * 100000) + 1;
 
     document.getElementById("repeat-name").append(`${inputNameSurname}`);
-    document.getElementById("offer-type").append(`Biglietto standard`);
+
     document.getElementById("carriage-number").append(`${randomCarriage}`);
     document.getElementById("cp-number").append(`${randomCpCode}`);
     document.getElementById("ticket-cost").append(`${totPriceRounded} euro`);
