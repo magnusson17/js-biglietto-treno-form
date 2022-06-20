@@ -1,3 +1,5 @@
+//generare biglietto treno. Inserire Nome e Cognome. Inserire Km da percorrere. Inserire range di età. Euro x Km = 0.21. Se si è minorenni si ha uno sconto del 20%. Se si è over 65 si ha uno sconto del 40%. Inserire un posto random. Inserire un codice random.
+
 let sectionTre = document.getElementById("section-3");
 
 let euroPerKm = 0.21;
