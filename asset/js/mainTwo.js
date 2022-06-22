@@ -8,7 +8,7 @@ let inputKm = document.getElementById('input-km').value;
 let inputAge = document.getElementById('input-age').value;
 
 generatBtn.addEventListener("click", function() {
-    if( inputNameSurname !== undefined && inputKm !== undefined && inputAge !== undefined ) {
+    if( inputNameSurname !== '' && inputKm !== '' && inputAge !== '' ) {
         section3.classList.remove('d-none');
     
         document.getElementById('repeat-name').append(`${inputNameSurname}`);
